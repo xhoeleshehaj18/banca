@@ -4,8 +4,6 @@
 #include "../headers/creazioneEmail.h"
 #include "../headers/loginEmail.h"
 
-typedef struct Cliente palle;
-
 int main() {
     int successoCreazioneEmail = -1;
 
