@@ -1,5 +1,7 @@
 #include "../headers/creazioneEmail.h"  /* Include the header (not strictly necessary here) */
 
-int creazioneEmail(int x) {
-    return x + 5;
+struct Cliente;
+
+int creazioneEmail(Cliente *nomeCliente, Cliente *cognomeCliente) {
+    return 1 + 5;
 }

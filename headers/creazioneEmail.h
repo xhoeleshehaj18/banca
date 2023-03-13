@@ -1,6 +1,12 @@
 #ifndef CREAZIONEEMAIL_H_   /* Include guard */
 #define CREAZIONEEMAIL_H_
 
-int creazioneEmail(int x);  /* An example function declaration */
+#define C 100
 
-#endif // FOO_H_
+typedef struct {
+   char nomeCliente[C][C], cognomeCliente[C][C];
+} Cliente;
+
+int creazioneEmail(Cliente*, Cliente*);  /* An example function declaration */
+
+#endif 
