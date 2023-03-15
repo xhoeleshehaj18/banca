@@ -7,9 +7,9 @@
 int main() {
     int successoCreazioneEmail = -1;
 
-    Cliente b;
+    Cliente a, b;
 
-    successoCreazioneEmail = creazioneEmail(&b, &b);
+    a.nClienti = successoCreazioneEmail = creazioneEmail(&b, &b, a);
 
     printf("%d\n", successoCreazioneEmail);
     return 0;

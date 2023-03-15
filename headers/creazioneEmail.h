@@ -4,9 +4,10 @@
 #define C 100
 
 typedef struct {
+   int nClienti;
    char nomeCliente[C][C], cognomeCliente[C][C];
 } Cliente;
 
-int creazioneEmail(Cliente*, Cliente*);  /* An example function declaration */
+int creazioneEmail(Cliente*, Cliente*, Cliente);  /* An example function declaration */
 
 #endif 
