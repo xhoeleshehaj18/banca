@@ -4,7 +4,7 @@
 #define C 100
 
 typedef struct {
-   int nClienti = 0;
+   int nClienti;
    char nomeCliente[C][C], cognomeCliente[C][C];
 } Cliente;
 
