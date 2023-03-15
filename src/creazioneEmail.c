@@ -9,11 +9,10 @@ int creazioneEmail(Cliente *nomeCliente, Cliente *cognomeCliente, Cliente n) {
     int contNome = 0, contCognome = 0;
     char confermaNome[C], confermaCognome[C];
 
-    Cliente b;
-
     while (strcmp(confermaNome, "si") != 0) {
         printf("Inserire il nome:\t");
         scanf("%s", nomeCliente->nomeCliente[contNome]);
+        fflush(stdin);
 
         printf("Confermare '%s' come nome?:\t", nomeCliente->nomeCliente[contNome]);
         scanf("%s", confermaNome);
@@ -27,6 +26,7 @@ int creazioneEmail(Cliente *nomeCliente, Cliente *cognomeCliente, Cliente n) {
     while (strcmp(confermaCognome, "si") != 0) {
         printf("Inserire il cognome:\t");
         scanf("%s", cognomeCliente->cognomeCliente[contCognome]);
+        fflush(stdin);
 
         printf("Confermare '%s' come cognome?:\t", cognomeCliente->cognomeCliente[contCognome]);
         scanf("%s", confermaCognome);
