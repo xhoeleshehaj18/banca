@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
-#include "../headers/creazioneEmail.h"  /* Include the header (not strictly necessary here) */
+#include "../headers/creazioneEmail.h"
 #include "../headers/conversioneMinuscolo.h"
 #include "../headers/acquisizioneDataDiNascita.h"
 
