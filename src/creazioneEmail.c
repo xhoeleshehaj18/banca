@@ -46,6 +46,9 @@ int creazioneEmail(Cliente *nomeCliente, Cliente *cognomeCliente, Cliente *dataD
     scanf("%s", tempa);
 
     // conversione da stringa acquisita a numeri interi utilizzabili per fare operazioni --> ../headers/acquisizioneDataDiNascita.c $.h
+    // acquisire la stringa e fare un controllo sulla lunghezza per vedere se il formato e' corretto, poi dato che il formato e' sempre lo stesso
+    // fare una funzione semplice che trasforma i valori ASCII di stringhe numeriche  ad ogni ignorando gli /
+    
     time_t t1 = dateToInt(tempa);
 
     printf("Palle %d\n", t1);

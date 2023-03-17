@@ -8,7 +8,7 @@ time_t dateToInt(char *ymd) {
   if (ymd == NULL) {
     return (time_t)-1;
   }
-
+  
   struct tm tm = {0}; // Important: initialize all members to 0
   int n = 0;
   sscanf(ymd, "%4d-%2d-%2d %n", &tm.tm_year, &tm.tm_mon, &tm.tm_mday, &n);
