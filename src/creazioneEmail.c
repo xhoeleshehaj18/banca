@@ -1,13 +1,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 #include "../headers/creazioneEmail.h"  /* Include the header (not strictly necessary here) */
 #include "../headers/conversioneMinuscolo.h"
+#include "../headers/acquisizioneDataDiNascita.h"
 
+union Temp {
+    int giorno, mese, anno;
+    char suggerimentiEmail[C][C];
+} temp;  
 
-int creazioneEmail(Cliente *nomeCliente, Cliente *cognomeCliente, Cliente n) {
+int creazioneEmail(Cliente *nomeCliente, Cliente *cognomeCliente, Cliente *dataDiNascitaCliente, Cliente *emailCliente, Cliente n) {
     int contNome = 0, contCognome = 0;
     char confermaNome[C], confermaCognome[C];
+    char tempa[C];
 
     while (strcmp(confermaNome, "si") != 0) {
         printf("Inserire il nome:\t");
@@ -34,6 +41,23 @@ int creazioneEmail(Cliente *nomeCliente, Cliente *cognomeCliente, Cliente n) {
             conversioneMinuscolo(cognomeCliente->cognomeCliente[contCognome], contCognome);
         }
     }
+
+    printf("Inserire la data di nascita: [DD/MM/YYYY]:\t");
+    scanf("%s", tempa);
+
+    // conversione da stringa acquisita a numeri interi utilizzabili per fare operazioni --> ../headers/acquisizioneDataDiNascita.c $.h
+    time_t t1 = dateToInt(tempa);
+
+    printf("Palle %d\n", t1);
+
+
+    // suggerimenti sulla mail in base a nome, cognome e data di nascita
+    printf("Crea la mail:\t");
+    scanf("%s", emailCliente->emailCliente[contNome]);
+
+
     n.nClienti += 1;
+
     return n.nClienti;
 }
+

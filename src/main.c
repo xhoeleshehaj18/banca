@@ -9,7 +9,7 @@ int main() {
 
     Cliente a, b;
 
-    a.nClienti = successoCreazioneEmail = creazioneEmail(&b, &b, a);
+    a.nClienti = successoCreazioneEmail = creazioneEmail(&b, &b, &b, &b, a);
 
     printf("%d\n", successoCreazioneEmail);
     return 0;

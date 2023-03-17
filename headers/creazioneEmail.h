@@ -5,9 +5,9 @@
 
 typedef struct {
    int nClienti;
-   char nomeCliente[C][C], cognomeCliente[C][C];
+   char nomeCliente[C][C], cognomeCliente[C][C], emailCliente[C][C], dataDiNascitaCliente[C][C];
 } Cliente;
 
-int creazioneEmail(Cliente*, Cliente*, Cliente);  /* An example function declaration */
+int creazioneEmail(Cliente*, Cliente*, Cliente*, Cliente*, Cliente);  /* An example function declaration */
 
 #endif 
