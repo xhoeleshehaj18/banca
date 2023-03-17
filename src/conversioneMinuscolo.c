@@ -7,7 +7,7 @@
 void conversioneMinuscolo(Cliente *str, int n) {
 	char *t = str;
 
-    while ( *t != '\0' ) {
+    while (*t != '\0') {
         if (*t >= 'A' && *t <= 'Z' )
             *t = *t + ('a' - 'A');
         t++;
